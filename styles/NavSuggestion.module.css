@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.navContainer
+{   margin-bottom: 20px;
+    position: fixed; top:0px;
+    z-index: 20;
+    width:100%;
+    height:120px;
+    background-color: #9B59B6;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    animation: entry 1s 1 ease;
+    
+}
+
+.btn
+{
+
+padding:5px;
+border-radius: 50px;
+background-color:white
+
+}
+
+
+
+
+
+
+
+@keyframes  entry {
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to
+    {
+            opacity:100;
+            transform: translateY(0px);
+        
+    }
+}
+
+.navInputContainer
+{
+        width:80%;
+        display:flex;
+        align-items:center;
+        justify-content:space-around;
+        margin-left: 20px;
+        background-color: white;
+        border-radius: 50px;
+
+
+
+}
+.logoContainer {
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+    justify-content: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    line-height:30px;
+    
+
+
+
+}
+
+.userLogoContainer {
+    margin-right: 10px;
+width:40px;
+height:40px;
+padding:5px;
+background-color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.y:hover
+{
+        transform:rotateY(20deg);
+        
+}
+.superContainer
+{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around
+}
+
+.navInput
+{
+    width:80%;
+    height:60px;
+    border:none;
+    border-radius:50px;
+    border-inline-width: 0px;
+font-size: 20px;
+padding-left: 50px;
+font-family:'Poppins', sans-serif;
+
+}
+
+.navInput:focus
+{
+    outline-width: 0px;
+    
+}
+.navInput::placeholder
+{
+color:#442C2E;
+transition:all 1s ease
+}
+.navInput:hover
+{
+    transition:all 1s ease;
+
+letter-spacing: 10px;
+}
+.navInput:hover::placeholder
+{
+color:#1f15153d;
+}
